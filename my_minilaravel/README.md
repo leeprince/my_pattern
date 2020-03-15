@@ -76,8 +76,10 @@ mysql 日志服务类：实现契约接口的约束方法
 
 ## 源码地址
 
+https://github.com/leeprincefoxmail/my_pattern/tree/master/my_minilaravel
 
 
+---
 这框架只是为让大家一起了解和熟悉 laravel 在应用层的加载过程。当然 laravel 框架本身还有很多核心的架构，比如服务提供者、管道，有时间我再补上
 
 欢迎大家留言一起讨论～
