@@ -4,3 +4,6 @@
 
 
 ## [laravel 应用层执行过程源码分析](https://github.com/leeprincefoxmail/my_pattern/tree/master/my_minilaravel)
+
+
+## [laravel 管道及中间件源码分析](https://github.com/leeprincefoxmail/my_pattern/tree/master/pipeline)
