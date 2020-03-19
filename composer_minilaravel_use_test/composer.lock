@@ -1,0 +1,48 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "2f092b7cf54fa31c4a7e55e67edc7e68",
+    "packages": [
+        {
+            "name": "leeprince/composer_minilaravel",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../composer_minilaravel",
+                "reference": "195169e77cfae9140910a65cfdf52336bc84dd3a"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "./src/Support/Helper.php"
+                ],
+                "psr-4": {
+                    "Minilaravel\\": "./src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "leeprince",
+                    "email": "leeprince@foxmail.com"
+                }
+            ],
+            "description": "this is composer_minilaravel"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "leeprince/composer_minilaravel": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

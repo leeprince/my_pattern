@@ -1,0 +1,23 @@
+{
+    "name": "leeprince/composer_minilaravel",
+    "description": "this is composer_minilaravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leeprince",
+            "email": "leeprince@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": ["./src/Support/Helper.php"],
+        "psr-4": {
+            "Minilaravel\\": "./src/"
+        }
+    }
+}
+
+
+

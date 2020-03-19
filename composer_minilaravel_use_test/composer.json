@@ -1,0 +1,22 @@
+{
+    "name": "leeprince/test_use_composer_minilaravel",
+    "description": "This is test use composer_minilaravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "leeprince",
+            "email": "leeprince@foxmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "leeprince/composer_minilaravel": "dev-master"
+    },
+    "repositories": {
+        "composer_minilaravel": {
+            "type": "path",
+            "url": "../composer_minilaravel"
+        }
+    }
+}

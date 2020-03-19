@@ -15,7 +15,7 @@ require_once 'Request.php';
 require_once 'Facade.php';
 require_once 'MyFacade.php';
 require_once 'LeeprinceController.php';
-require_once 'helper.php';
+require_once 'Helper.php';
 
 $app = new Application();
 

@@ -1,0 +1,32 @@
+[
+    {
+        "name": "leeprince/composer_minilaravel",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "dist": {
+            "type": "path",
+            "url": "../composer_minilaravel",
+            "reference": "195169e77cfae9140910a65cfdf52336bc84dd3a"
+        },
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "./src/Support/Helper.php"
+            ],
+            "psr-4": {
+                "Minilaravel\\": "./src/"
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "leeprince",
+                "email": "leeprince@foxmail.com"
+            }
+        ],
+        "description": "this is composer_minilaravel"
+    }
+]

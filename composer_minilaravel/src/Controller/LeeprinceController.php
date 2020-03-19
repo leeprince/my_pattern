@@ -5,6 +5,11 @@
  * @Author  leeprince:2020-03-12 04:22
  */
 
+namespace Minilaravel\Controller;
+
+use Minilaravel\Support\Facades\FileLogFacade;
+use Minilaravel\Contracts\Log\LogContracts;
+
 class LeeprinceController
 {
     public function index()
@@ -21,7 +26,7 @@ class LeeprinceController
         
         // 通过门面
         dump('---------------门面调用服务 👇-----------------');
-        dump('门面：', FileLogFacade::write());
+        dump('门面：'.FileLogFacade::write());
         
         return '[return]hello leeprince ';
     }

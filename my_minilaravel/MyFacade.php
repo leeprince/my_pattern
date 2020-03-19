@@ -4,11 +4,11 @@
  *
  * @Author  leeprince:2020-03-11 23:26
  */
-class dbFacade extends Facade
+class FileLogFacade extends Facade
 {
     public static function getFacadeAccessor()
     {
-        return 'db';
+        return 'FileLog';
     }
 }
 class RouteFacade extends Facade
