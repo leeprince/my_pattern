@@ -50,3 +50,15 @@ class TestReflection
         return "TestReflection - test()\n";
     }
 }
+class TestNew
+{
+    public function __construct()
+    {
+        var_dump("测试容器绑定时直接实例化");
+    }
+    
+    public function test()
+    {
+        return "TestNew - test()\n";
+    }
+}

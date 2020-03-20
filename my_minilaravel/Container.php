@@ -22,8 +22,10 @@ class Container
      * [绑定到容器数组]
      *
      * @Author  leeprince:2020-03-11 19:36
-     * @param $abstract
-     * @param $concrete
+     * @param $abstract 要绑定的抽象（标识） / 接口名
+     *                  【注意 ：要绑定的到容器数组中的类或者接口名，使用「类型提示」 的方式在类的构造函数中注入依赖项时，会根据构造函数参数并反射后继续实例化，所以该值不可以随便定义，否则报错。
+     *                  所以建议该参数使用绑定的的类 / 接口名】
+     * @param $concrete 实例化对象 / 绑定的类名 / 实现接口的类名 / 闭包 / null(绑定自身)
      */
     public function bind($abstract, $concrete = null)
     {
@@ -109,6 +111,11 @@ class Container
         // 再优化版本：通过反射机制继续递归解析具体类中的依赖注入：参考 IOC 的部分即可！
         if (isset($this->bind[$abstract])) {
             $concrete = $this->bind[$abstract];
+            
+            // 是对象时直接返回
+            if (is_object($concrete)) {
+                return $concrete;
+            }
             
             // 如果具体实现是闭包那么直接执行闭包，也不必绑定到共享实例中，因为闭包函数本身也不是实例。
             // 下列有3中判断是否是否一个闭包的方式。显然第一种更加专业
