@@ -1,6 +1,6 @@
 <?php
 /**
- * [Description]
+ * [辅助函数]
  *
  * @Author  leeprince:2020-03-14 14:52
  */
